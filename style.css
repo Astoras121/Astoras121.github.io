@@ -1,4 +1,8 @@
-#box1{
+body{
+    margin: 0;
+}
+
+.navigation #box1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,8 +14,34 @@
     transition: 0.5s;
 }
 
+.navigation .menu{
+    transition: 0.5s;
+    color: white;
+    display: flex;
+    font:message-box;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 20px;
+    width: 70px;
+    background-color:#545863;
+    position: absolute;
+    top: 85px;
+}
 
-.box span{
+
+.navigation{
+    position: relative;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 2600px;
+    background: #fff;
+    height: 70px;
+}
+
+
+.navigation #box1 span{
     font-size: 0em;
     color: rgb(255, 255, 255);
     display:flex;
@@ -28,13 +58,20 @@
 }
 
 
-.box span:hover{
+.navigation #box1:hover{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+
+.navigation #box1 span:hover{
     filter: drop-shadow(0 0 2px lime);
     transition: 0.1s;
     color: lime;
 }
 
-.box:hover span{
+.navigation #box1:hover span{
     background: #333849;
     font-size: 2.32em;
     border-radius: 5px;
@@ -44,14 +81,11 @@
 
 }
 
-body{
-    background: #282d3b;
+.img{
+    width: 800px;
+    height: 500px;
 }
 
-#box2{
-    position: relative;
-    top: 300px;
-    background-color: black;
-    width: 90px;
-    height: 90px;
+body{
+    background: #282d3b;
 }
