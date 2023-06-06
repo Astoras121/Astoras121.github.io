@@ -12,6 +12,65 @@
     transition: 0.1s;
 }
 
+.colete-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border-radius: 80px;
+    right: 121px;
+    bottom: 30px;
+    position: absolute;
+    transition: 0.1s;
+}
+
+.food-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border-radius: 80px;
+    right: 210px;
+    bottom: 30px;
+    position: absolute;
+    transition: 0.1s;
+}
+
+.health-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border-radius: 80px;
+    right: 300px;
+    bottom: 30px;
+    position: absolute;
+    transition: 0.1s;
+}
+
+.health-circle .inner-circle4{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #d64646;
+    border-radius: 80px;
+}
+
+
+.food-circle .inner-circle3{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #d8a14f;
+    border-radius: 80px;
+}
+
 .mic-circle .inner-circle{
     position: absolute;
     width: 55px;
@@ -19,6 +78,15 @@
     border: 5px solid #8fe8fd;
     border-radius: 80px;
 }
+
+.colete-circle .inner-circle2{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #ffffff;
+    border-radius: 80px;
+}
+
 
 body{
     background-color: rgb(28, 81, 105);
@@ -34,8 +102,39 @@ body{
     line-height: 1.8;
 }
 
-.min-circle:hover{
-    height: 75px;
-    width: 75px;
+.icon4{
+    color: #4dcc1a;
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.8;
 }
+
+.icon2{
+
+    color: #ffffff;
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.icon3{
+    color: #ffffff;
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+label{
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 70px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
 
