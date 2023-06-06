@@ -1,24 +1,41 @@
-body{
-    background: rgba(78, 126, 114, 0.533);
-    margin: 0;
-}
-
-.box{
+.mic-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 70px;
-    height:70px;
-    position: relative;
-    border-radius: 7px;
-    background: gray;
-    
-    transition: 0.5s;
+    height: 70px;
+    background-color: gray;
+    border-radius: 80px;
+    right: 30px;
+    bottom: 30px;
+    position: absolute;
+    transition: 0.1s;
 }
 
-.box:hover{
-    width: 200px;
-    height:200px;
-    border-radius: 10px;
- }
+.mic-circle .inner-circle{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 5px solid #8fe8fd;
+    border-radius: 80px;
+}
 
-    
+body{
+    background-color: rgb(28, 81, 105);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+.icon{
+    color: #8fe8fd;
+    font-size: 2.4em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.min-circle:hover{
+    height: 75px;
+    width: 75px;
+}
 
