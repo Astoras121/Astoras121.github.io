@@ -53,3 +53,15 @@ body{
     height: 60px;
     border-radius: 100%;
 }
+
+#animationButton{
+    position: relative;
+    top: 70px;
+    right: 75px;
+    width: 40px;
+    height: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
