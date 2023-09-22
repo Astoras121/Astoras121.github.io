@@ -1,17 +1,13 @@
-const box = document.getElementById("box1");
+let percent = 0;
+let otherPercent
+const loader = document.getElementById("CircleLoader");
+let button = document.getElementById("submitButton");
+let label = document.getElementById("Percent")
 
-box.addEventListener("mouseover", changeWidth);
-
-box.addEventListener("mouseout", changeWidthBack);
-
-
-
-function changeWidthBack(){
-    box.style.width = "70px";
-    box.style.height = "70px";
-}
-
-function changeWidth(){
-    box.style.height = "200px";
-    box.style.width = "200px";
+button.onclick = function(){
+    let value = document.getElementById("inputPercent").value;
+    percent = value + "%";
+    otherPercent = 100 - value + "%";
+    loader.style.background = `linear-gradient(to top, green 0% ${percent}, transparent 0% ${otherPercent})`
+    label.textContent = percent;
 }
