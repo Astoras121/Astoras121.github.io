@@ -1,67 +1,105 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    /*background-image: url(bg.png);*/
-    background-color: white;
+    align-items: center;
+    flex-direction: column;
 }
 
-#OuterLayer{
+#background{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110px;
-    width: 110px;
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 120px;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 100%;
 }
 
-#OuterLayer #roundCircle{
+#background #percentStroke {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 95px;
-    height: 95px;
-    background: linear-gradient(to bottom, transparent 0% 70%,#7d66b6 0% 40%);
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
+    background: conic-gradient(purple 100deg,transparent 0deg);
 }
 
-#OuterLayer #roundCircle #innerCircleBackground{
+#background #percentStroke #innerBackground {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85px;
-    height: 85px;
-    background: #90a5d0;
+    width: 90px;
+    height: 90px;
+    background-color: ghostwhite;
     border-radius: 100%;
 }
 
-#OuterLayer #roundCircle #innerCircleBackground #innerCircleBackgroundBackground{
+#background #percentStroke #innerBackground #innerCircle{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 5px solid rgb(14, 11, 11);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
-    width: 75px;
-    border-radius: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    border: 5px solid black;
 }
 
-#OuterLayer #roundCircle #innerCircleBackground #innerCircleBackgroundBackground #foodImage{
-    width: 60px;
-    height: 60px;
+#background #percentStroke #innerBackground #innerCircle #drinkImage{
+    size: 80px;
+    height: 80px;
     border-radius: 100%;
+    background-color: rgb(233, 221, 221);
 }
 
-#animationButton{
-    position: relative;
-    top: 70px;
-    right: 75px;
-    width: 40px;
-    height: 15px;
+
+
+
+#background2{
+    margin: 5px;
     display: flex;
-    text-align: center;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    width: 120px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
 }
+
+#background2 #percentStroke2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: conic-gradient(purple 250deg,transparent 0deg);
+}
+
+#background2 #percentStroke2 #innerBackground2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(233, 221, 221);
+    border-radius: 100%;
+}
+
+#background2 #percentStroke2 #innerBackground2 #innerCircle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 5px solid rgb(14, 11, 11);
+}
+
+#background2 #percentStroke2 #innerBackground2 #innerCircle2 #foodImage2{
+    size: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
