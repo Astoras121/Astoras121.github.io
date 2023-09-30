@@ -1,13 +1,13 @@
 for (let i = 1; i <= 11; i++) {
   let div = document.getElementById(`div${i}`);
-  div.style.height = "70px";
-  div.style.width = "270px";
+  div.style.height = "75px";
+  div.style.width = "220px";
   div.style.background = "var(--clr)";
   div.style.transform = "skewY(-5deg)";
   div.style.display = "flex";
   div.style.justifyContent = "center";
   div.style.alignItems = "center";
-
+  
   const computedStyle = getComputedStyle(div);
   const langValue = computedStyle.getPropertyValue("--lang");
   const image1 = computedStyle.getPropertyValue("--img");
