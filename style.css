@@ -1,9 +1,49 @@
 #container{
     position: relative;
-    top: 120px;
-    left: 20px;
+    left: 110px;
+    bottom: 100px;
 }
 
 #container div{
+    position: relative;
     cursor: pointer;
 }
+
+#logo img{
+    position: relative;
+    margin-left: 100px;
+    width: 135px;
+    height: 135px;
+    bottom: 100px;
+    right: 40px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    //*background-image: url("backgroundbody.png");*/
+}
+
+#playButton {
+    position: relative;
+    top: 800px;
+    left: 740px;
+    height: 120px;
+    border-radius: 10px;
+    width: 380px;
+    transform: skewY(-4deg);
+    background-color: #8359ed;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2em;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+#playButton:hover {
+    height: 125px;
+    width: 390px;
+    transform: skewY(-4deg) scale(1.05);
+    cursor: pointer;
+  }
